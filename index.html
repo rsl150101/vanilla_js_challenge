@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Final Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <h1></h1>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <form class="login-form hidden">
+      <input
+        class="login-form__username"
+        type="text"
+        required
+        maxlength="15"
+        placeholder="Please enter your name"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h4 id="greeting" class="hidden"></h4>
+    <form>
+      <input class="logout-btn hidden" type="submit" value="Log Out" />
+    </form>
+    <form class="todo-form">
+      <input
+        class="todo-form__contents hidden"
+        type="text"
+        placeholder="Write a To Do and Press Enter"
+        required
+      />
+    </form>
+    <ul class="todo-list hidden"></ul>
+
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
