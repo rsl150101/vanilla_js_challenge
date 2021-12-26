@@ -6,6 +6,29 @@ body {
   align-items: center;
   height: 100vh;
 }
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+input:focus::placeholder {
+  opacity: 0;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
 
 .clock {
   text-align: center;
@@ -29,6 +52,10 @@ body {
   flex-direction: column;
   margin-top: 50px;
   align-items: center;
+}
+
+.login-form__username {
+  width: 330px;
 }
 
 .login-form input:last-child {
@@ -70,6 +97,10 @@ img {
   justify-content: center;
 }
 
+.todo-form__contents {
+  width: 500px;
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
@@ -82,31 +113,6 @@ img {
 
 .todo-list::-webkit-scrollbar {
   display: none;
-}
-
-input[type="text"] {
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: transparent;
-  color: white;
-  width: 500px;
-  height: 50px;
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-input::placeholder {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-}
-input:focus::placeholder {
-  opacity: 0;
-}
-
-input[type="text"]:focus {
-  outline: none;
 }
 
 button {
